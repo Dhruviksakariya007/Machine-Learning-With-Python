@@ -23,4 +23,4 @@ a_inf = np.array([1,2,3, np.inf, -np.inf])
 print(np.isinf(a_inf))
 
 # replace inf value
-print(np.nan_to_num(a_inf, posinf=1000, neginf=-1000))
+print(np.nan_to_num(a_inf, posinf=1000, neginf=-1000)) 

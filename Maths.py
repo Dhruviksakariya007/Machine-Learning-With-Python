@@ -6,8 +6,10 @@ import scipy.stats as sp
 data = [50, 70, 70, 45, 76, 99, 88]
 
 print("Mean:", np.mean(data)) # avarage
-print(f"median: {np.median(data)}")
-print(f"mode: {sp.mode(data)}")
+print(f"median: {np.median(data)}") # middle value
+print(f"mode: {sp.mode(data)}") # most frequent value
+print(f"standard deviation: {np.std(data)}") # spread of data
+print(f"variance: {np.var(data)}") # average of squared differences from the mean
 
 
 matrix = np.array([[1,4,6], [8,9,12]])
