@@ -10,7 +10,6 @@ print(f"median: {np.median(data)}")
 print(f"mode: {sp.mode(data)}")
 
 
-
 matrix = np.array([[1,4,6], [8,9,12]])
 print(matrix, '\n')
 
