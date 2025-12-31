@@ -25,4 +25,4 @@ print(sorted_by_salary, '\n')
 
 # to save file as .csv
 # default index=True which also saves the index column
-# df.to_csv('music_copy.csv', index=False) 
+df.to_csv('music_copy.csv', index=False) 
