@@ -33,3 +33,7 @@ print(df, '\n')
 # inpace=True modifies the original dataframe (Mendatory)
 df.drop(columns=["Bonus", "Age"], inplace=True)
 print(df, '\n')
+
+
+# sorting values
+print(df.sort_values(by=["Salary", "Performance_Score"], ascending=False), '\n') # [false, true] but it's not working! don't know why!
