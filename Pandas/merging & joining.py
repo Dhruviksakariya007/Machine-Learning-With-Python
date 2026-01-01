@@ -26,6 +26,3 @@ print(pd.concat([df_customers, df_orders], axis=0, ignore_index=True), '\n')
 
 print(pd.concat([df_customers, df_orders], axis=1), '\n')
 
-# H.W.
-# 1. customer profile and 2. customer transaction
-# merge customer and cancate in another dataframe
