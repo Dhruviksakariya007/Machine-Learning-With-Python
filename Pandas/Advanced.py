@@ -50,4 +50,11 @@ df.plot(kind='bar', x='Name', y='Salary', title='Employee Salary')
 import matplotlib.pyplot as plt
 # plt.savefig(sys.stdout.buffer)
 # sys.stdout.flush()
-plt.show()
+# plt.show()
+
+# replace
+df.replace({"Ram": "Rama"}, inplace=True)
+print(df, '\n')
+
+df.replace(['Shyam', 'Simran'], ['Shyamu', 'Simar'], inplace=True)
+print(df, '\n')
