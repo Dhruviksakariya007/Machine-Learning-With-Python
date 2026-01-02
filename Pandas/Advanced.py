@@ -1,3 +1,4 @@
+import sys
 import pandas as pd
 
 data = {
@@ -37,3 +38,16 @@ print(df, '\n')
 
 # sorting values
 print(df.sort_values(by=["Salary", "Performance_Score"], ascending=False), '\n') # [false, true] but it's not working! don't know why!
+
+# resetting index
+df.reset_index(inplace=True) # df.reset_index(drop=True, inplace=True)
+print(df, '\n')
+
+# drop duplicate rows
+print(df.drop_duplicates(), '\n')
+
+df.plot(kind='bar', x='Name', y='Salary', title='Employee Salary')
+import matplotlib.pyplot as plt
+# plt.savefig(sys.stdout.buffer)
+# sys.stdout.flush()
+plt.show()
