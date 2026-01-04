@@ -15,10 +15,13 @@ data = {
 df = pd.DataFrame(data)
 
 print(df, '\n')
+total_missing = df.isnull().mean() * 100
+print(f"Missing Data: \n{total_missing}")
 
 # filling missing values, set default value or mean/median/mode etc.
 # df.fillna(0, inplace=True)
-df['Salary'].fillna(df['Salary'].mean(), inplace=True)
+# df['Salary'].fillna(df['Salary'].mean(), inplace=True)
+df.fillna(df['Salary'].mean(), inplace=True)
 print(df, '\n') 
 
 print(df.isnull().sum(), '\n') 
@@ -34,3 +37,5 @@ print(df, '\n')
 # 3 main methonds: linear, polynomial, time
 # df.interpolate(method="linear", inplace=True)
 # print(df, '\n')
+
+# to calculate how much data is missing in percentage!
