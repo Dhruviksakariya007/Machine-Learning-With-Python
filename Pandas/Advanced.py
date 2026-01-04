@@ -58,3 +58,9 @@ print(df, '\n')
 
 df.replace(['Shyam', 'Simran'], ['Shyamu', 'Simar'], inplace=True)
 print(df, '\n')
+
+df.insert(5, "Demo", ["True", "False", "True", "False", "True", "False", "True", "False"])
+print(df, '\n')
+
+df['Demo'] = df['Demo'].replace({"True": 1, "False": 0})
+print(df, '\n')

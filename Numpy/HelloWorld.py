@@ -3,7 +3,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
-dataSet = pd.read_csv('music.csv')
+dataSet = pd.read_csv('/Users/mac/Documents/Machine Learning/Numpy/music.csv')
 x = dataSet.drop(columns=['genre'])
 y = dataSet['genre']
 

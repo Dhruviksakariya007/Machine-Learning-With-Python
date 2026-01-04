@@ -20,7 +20,7 @@ print(f"Missing Data: \n{total_missing}")
 
 # filling missing values, set default value or mean/median/mode etc.
 # df.fillna(0, inplace=True)
-# df['Salary'].fillna(df['Salary'].mean(), inplace=True)
+df['Salary'].fillna(df['Salary'].mean(), inplace=True)
 df.fillna(df['Salary'].mean(), inplace=True)
 print(df, '\n') 
 
