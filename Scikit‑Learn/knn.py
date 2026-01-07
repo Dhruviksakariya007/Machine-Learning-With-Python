@@ -1,5 +1,6 @@
 # it makes decision based on nearest neighbors - mejority!
-
+# works well with small data sets
+# not required complex Maths
 from sklearn import *
 from sklearn.linear_model import *
 from sklearn.neighbors import *
